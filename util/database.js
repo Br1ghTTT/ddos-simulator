@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('ddos-simulator', 'root', '*********', {   // на місці ******* має бутии пароль до root в твому воркбенчі
+const sequelize = new Sequelize('ddos-simulator', 'root', '12345', {
     dialect: 'mysql',
     host: 'localhost'
 });
