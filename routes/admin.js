@@ -1,25 +1,23 @@
-const path = require('path');
-
 const express = require('express');
 
-const adminController = require('../controllers/admin');
-
+const adminController = require('../controller/admin');
+ 
 const router = express.Router();
 
-router.get('/', adminController.getUser); // -> GET user
+router.get('/', adminController.getUser) // GET User
 
-router.get('/users', adminController.getUsers);  // -> GET users
+router.get('/users', adminController.getUsers);    // GET users
 
-/*router.post('/create-user');
+router.post('/create-user', adminController.postCreateUser);
 
-router.post('/create-users');
+router.post('/create-users', adminController.postCreateUsers);
 
-router.post('/update-user');
+router.post('/update-user', adminController.postUpdateUser);
 
-router.post('/update-users');
+router.post('/update-users', adminController.postUpdateUsers);
 
-router.post('/delete-user');
+router.post('/delete-user', adminController.postDeleteUser);
 
-router.post('/delete-users'); */
+router.post('/delete-users', adminController.postDeleteUsers);
 
 module.exports = router;
