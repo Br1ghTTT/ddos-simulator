@@ -6,3 +6,9 @@ body-parser,
 mysql2,
 sequelize,
 nodemon
+
+
+
+for server.js:
+u need to to install unirest and express by input npm i unirest and npm i express
+and also move it to another folder, and then u may start both servers
